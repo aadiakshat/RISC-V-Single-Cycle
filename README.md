@@ -31,7 +31,7 @@ This core follows a [Single-Cycle] architecture.
 ### visual Verification
 *(Below are images from the `Screenshots` folder showing successful simulation)*
 
-![Simulation Waveform](Screenshots/simulation_wave.png)
+![Simulation Waveform](Screenshots/Screenshot 2025-12-12 221006.png)
 *(Note: Update the filename above to match an actual image in your Screenshots folder)*
 
 ---
