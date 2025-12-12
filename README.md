@@ -28,16 +28,12 @@ This core follows a [Single-Cycle] architecture.
 * **Data Width:** 32-bit
 * **Memory:** Harvard Architecture (Separate Instruction and Data memory)
 
-### visual Verification
-*(Below are images from the `Screenshots` folder showing successful simulation)*
-
-![Simulation Waveform](Screenshots/Screenshot 2025-12-12 221006.png)
-
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-* **Xilinx Vivado** (WebPACK or Standard Edition)
+* **Xilinx Vivado** (WebPACK or Standard Edition)/
+* **Icarus Verilog**
 * A text editor (VS Code, Notepad++)
 
 ### How to Simulate
