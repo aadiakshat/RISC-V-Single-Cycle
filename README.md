@@ -32,9 +32,7 @@ This core follows a [Single-Cycle] architecture.
 *(Below are images from the `Screenshots` folder showing successful simulation)*
 
 ![Simulation Waveform](Screenshots/Screenshot 2025-12-12 221006.png)
-*(Note: Update the filename above to match an actual image in your Screenshots folder)*
 
----
 
 ## 🚀 Getting Started
 
