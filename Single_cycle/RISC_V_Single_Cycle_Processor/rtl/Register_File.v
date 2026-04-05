@@ -1,6 +1,6 @@
 
 module Register_File(
-		     input wire 	clk, WE3,
+		     input wire 	clk, WE3, stall,
 		     input wire [4:0] 	RA1,RA2,WA3,
 		     input wire [31:0] 	WD3,
 		     output wire [31:0] RD1,RD2
@@ -10,7 +10,7 @@ module Register_File(
 
    always@(posedge clk)
      begin
-	if(WE3)
+	if(WE3 && !stall)
 	  REG_MEM_BLOCK[WA3] <= WD3;
      end
 

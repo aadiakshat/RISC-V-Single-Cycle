@@ -9,6 +9,7 @@ module Single_Cycle_Top(
    Single_Cycle_Core core_top (
 			       .clk(clk),
 			       .reset(reset),
+                               .stall(1'b0), // Tie off stall for the simulated Data_Memory
 			       .Instr(Instr),
 			       .ReadData(ReadData),
 			       .PC(PC),

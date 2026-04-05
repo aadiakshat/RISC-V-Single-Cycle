@@ -1,6 +1,5 @@
-`timescale 1ns / 1ps
 module Single_Cycle_Core(
-			 input wire 	    clk,reset,
+			 input wire 	    clk,reset, stall,
 			 input wire [31:0]  Instr,
 			 input wire [31:0]  ReadData,
 			 output wire [31:0] PC,
@@ -30,6 +29,7 @@ module Single_Cycle_Core(
    Core_Datapath Datapath(
 			  .clk(clk),
 			  .reset(reset),
+                          .stall(stall),
 			  .ResultSrc(ResultSrc),
 			  .PCSrc(PCSrc),
 			  .ALUSrc(ALUSrc),

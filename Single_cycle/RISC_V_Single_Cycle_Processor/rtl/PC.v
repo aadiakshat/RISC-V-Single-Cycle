@@ -1,5 +1,5 @@
 module PC (	
-		input wire 	   clk,reset,
+		input wire 	   clk,reset, stall,
 		input wire [31:0]  PCNext,
 		output wire [31:0] PC );
    
@@ -8,7 +8,7 @@ module PC (
    always@(posedge clk or posedge reset)
      begin
 	if (reset) PCReg <= 0;
-	else PCReg <= PCNext;
+	else if (!stall) PCReg <= PCNext;
      end	
 
    assign PC = PCReg;

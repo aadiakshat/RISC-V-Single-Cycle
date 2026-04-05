@@ -1,6 +1,5 @@
-
 module Core_Datapath(
-		     input	   clk,reset,
+		     input	   clk,reset, stall,
 		     input [1:0]   ResultSrc,
 		     input	   PCSrc,ALUSrc,
 		     input	   RegWrite,
@@ -23,6 +22,7 @@ module Core_Datapath(
    PC PC_inst (
 	       .clk(clk),
 	       .reset(reset),
+               .stall(stall),
 	       .PCNext(PCnext),
 	       .PC(PC)
 	       );
@@ -47,6 +47,7 @@ module Core_Datapath(
    Register_File Register_inst(
 			       .clk(clk),
 			       .WE3(RegWrite),
+                               .stall(stall),
 			       .RA1(Instr[19:15]),
 			       .RA2(Instr[24:20]),
 			       .WA3((Instr[11:7])),
